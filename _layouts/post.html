@@ -6,3 +6,15 @@ layout: default
   <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d' }}</time></p>
   {{ content }}
 </article>
+{% if page.previous or page.next %}
+<nav class="post-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+  {% else %}
+    <div style="flex-grow: 1"></div>
+  {% endif %}
+  {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+  {% endif %}
+</nav>
+{% endif %}
