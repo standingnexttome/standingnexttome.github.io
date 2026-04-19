@@ -1,0 +1,15 @@
+title: standing next to me
+description: A minimal blog.
+url: https://standingnexttome.github.io
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - mise.toml
+  - .idea
