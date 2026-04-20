@@ -22,3 +22,7 @@ These aren't meant to be gotchas, but rather to give candidates opportunities to
 Orthogonal to the above, but no less important, is the fact that this process is meant to help me understand how the candidate communicates - are they able to give bad feedback (at all)? Are they able to give bad feedback (tactfully)? Do they call out implicit assumptions? How do they navigate situations where their judgment may be incorrect? 
 
 I remember this strong candidate who didn't do super well in terms of the initial review, but who participated in the discussion eagerly and intelligently. I would have loved to work with them; that ended up not happening for multiple reasons (chief among which was that I left shortly after), but it was still a wonderful interview.
+
+Anyway, I worry about the effect LLMs have on individuals' cognitive capabilities. It would be bad if they were just slop generators, but the problem is that they now produce real value; I've personally experienced this, though, as noted above, I think it's still important to stay close to the code.
+
+If I were reviewing _my own_ code, then, yes, I might do an LLM-based first pass. But to do that on someone else's code, and in such a way that you clearly don't read through or edit the output (as evinced by their inability to answer even simple questions)...can you really get anywhere with that?
