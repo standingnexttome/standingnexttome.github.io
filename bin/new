@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ $# -lt 1 ]]; then
+    echo "Usage: new <title>" >&2
+    exit 1
+fi
+
+title="$*"
+date=$(date +%Y-%m-%d)
+slug=$(printf '%s' "$title" \
+    | tr '[:upper:]' '[:lower:]' \
+    | sed -E 's/[^a-z0-9]+/-/g; s/^-+|-+$//g')
+
+root=$(git rev-parse --show-toplevel)
+file="$root/_posts/$date-$slug.md"
+
+if [[ -e "$file" ]]; then
+    echo "File already exists: $file" >&2
+    exit 1
+fi
+
+cat > "$file" <<EOF
+---
+layout: post
+title: $title
+---
+
+EOF
+
+echo "$file"
