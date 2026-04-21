@@ -1,11 +1,15 @@
 title: standing next to me
-description: A minimal blog.
+author: Marcus
+description: a blog
 url: https://standingnexttome.github.io
 
 permalink: /:year/:month/:day/:title/
 
 markdown: kramdown
 highlighter: rouge
+
+plugins:
+  - jekyll-feed
 
 exclude:
   - README.md

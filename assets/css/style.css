@@ -30,6 +30,13 @@ body {
 header, footer { margin-block: 1.5rem; }
 footer { color: var(--muted); font-size: 0.9rem; }
 
+.rss {
+  margin-left: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
