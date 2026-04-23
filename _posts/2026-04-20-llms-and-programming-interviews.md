@@ -7,7 +7,7 @@ The interview loops I've planned almost always involve a code review round. Read
 
 I usually create a PR that, ostensibly, came from a junior developer, and ask the candidate to review it just like they would in a production context. Then, on a call, we go through the content of their review.
 
-It mildly scares me that at least 90% of the candidates who reach this round, more or less, use LLMs to generate a review and call it a day. Not because of the simple fact of generation, nor their tendency to use 5 words where 1 would have sufficed. Rather, it's more because, during the discussion phase, they can't go any deeper than what the LLM did for them.
+It mildly scares me that at least 90% of the candidates who reach this round, more or less, use LLMs to generate a review and call it a day. _Starting_ with LLM content is fine-ish, but during the discussion phase, they generally can't go any deeper than what the LLM did for them, which suggests to me that they've abdicated the responsibility of independent thought.
 
 For example, I always include a very simple and obvious SQL injection vulnerability; something that GPT-3 could have easily caught. As expected, all candidates flag this first, and suggest using query parameterisation.
 
