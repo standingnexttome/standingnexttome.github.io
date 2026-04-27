@@ -17,9 +17,9 @@ layout: default
   <a href="{{ page.previous.url | relative_url }}"
     >&larr; {{ page.previous.title }}</a
   >
-  {% else %}
+  {% endif %}
   <div style="flex-grow: 1"></div>
-  {% endif %} {% if page.next %}
+  µ{% if page.next %}
   <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
   {% endif %}
 </nav>
